@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <!-- サイトの概要を記述しています -->
+    <meta name="description" content="業務改善システムのLPサイト" />
+    <!-- googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+       <!-- swiperの読み込み -->
+       <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- GSAP CDN-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+
+    <div class="loading" id="loading">
+      <p class="loading__text"><img src="./img/logo-w.png" alt="トラデジの画像"></p>
+    </div>
+
+    <div class="p-top">
+      <header class="p-header js-header">
+        <div class="l-header_inner l-inner">
+          <div class="p-header_logo js-header">
+            <a href=""></a>
+          </div>
+
+          <!-- pc -->
+          <nav class="p-header_nav">
+            <a href="#" class="p-header_link js-header">デザイン</a>
+            <a href="#" class="p-header_link js-header">コーディング</a>
+            <a href="#" class="p-header_link js-header">動画</a>
+            <a href="#" class="p-header_link js-header">ライティング</a>
+            <a href="#course" class="p-header_button c-button js-header">トラレジとは？</a>
+          </nav>
+
+          <!-- sp -->
+          <button id="js-drawer-icon" class="header_open p-drawer-icon js-header">
+            <span class="p-drawer-icon_bar js-header"></span>
+            <span class="p-drawer-icon_bar js-header"></span>
+            <span class="p-drawer-icon_bar js-header"></span>
+          </button>
+
+          <div id="js-drawer-content" class="p-drawer-content">
+            <nav class="p-drawer-content_menu">
+              <a href="#" class="p-drawer-content_link">デザイン</a>
+              <a href="#" class="p-drawer-content_link">コーディング</a>
+              <a href="#" class="p-drawer-content_link">動画</a>
+              <a href="#" class="p-drawer-content_link">ライティング</a>
+              <a href="#" class="p-drawer-content_link">トラデジとは？</a>
+              <a href="#" class="p-drawer-content_link">お気に入り一覧</a>
+              
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="p-fv">
+        <div class="p-fv__inner l-inner">
+          <p class="p-fv__title-top">
+            求めているクリエイターがきっと見つかる！
+          </p>
+          <h1 class="p-fv__title">
+            <img
+              src="./img/logo-w.png"
+              alt="ロゴ：トラデジ ギャラリー"
+              width="1220"
+              height="136"
+            />
+          </h1>
+          <p class="p-title__sub">
+            多彩なトラデジ生・卒業生の<br class="u-hidden-sp"/>制作作品を紹介するサイト集</span>
+          </p>
+        </div>
+        <!-- /.p-fv__inner l-inner -->
+      </section>
+      <!-- /.l-fv -->
+    </div>
+
+    <section class="p-about">
+      <div class="p-about__swiper">
+        <div id="js-about-swiper" class="swiper">
+          <div class="swiper-wrapper p-about__swiper-wapper">
+            <li class="p-about__swiper-slide swiper-slide">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider2.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">サイクルのぐち</h3>
+                  <p class="p-fv-slide__title-sub">サイクルのぐち</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img src="./img/human3.png" alt="るみゆのプロフィール画像" />
+                    <span>るみゆ
+                      <span class="c-color-p">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  日本で唯一の輸入自転車販売会社のWebサイトおよび通販販売サイトを制作しました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+                <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider1.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">QUAR Leather</h3>
+                  <p class="p-fv-slide__title-sub">QUAR有限会社</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img src="./img/human1.png" alt="次郎のプロフィール画像" />
+                    <span>次郎
+                      <span class="c-color-b">●</span>
+                    </span>
+                  </div>
+                  <div class="p-profile">
+                    <img
+                      src="./img/human2.png"
+                      alt="サキ_Web制作のプロフィール画像"
+                    />
+                    <span>サキ_Web制作 
+                      <span class="c-color-p">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  高品質布製品専門メーカー。暖かさとスタイルを提供する会社のWebサイトを制作しました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__g">動画</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider3.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">しろまきアウトドア用品店</h3>
+                  <p class="p-fv-slide__title-sub">しろまき</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human4.png"
+                      alt="あいあいのプロフィール画像"
+                    />
+                    <span>あいあい
+                      <span class="c-color-g">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  冒険心をくすぐるアイテムを販売する、アウトドア用品店のWebサイト上の動画を撮影しました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider4.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">さんかくペンシル</h3>
+                  <p class="p-fv-slide__title-sub">さんかく</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img src="./img/human3.png" alt="るみゆのプロフィール画像" />
+                    <span>るみゆ
+                        <span class="c-color-p">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  女性をターゲットとしたカラフルで楽しい多種多様な文房具のWebサイトと販売サイトを制作しました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+                <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider5.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">Flower MAMAMI</h3>
+                  <p class="p-fv-slide__title-sub">mamami</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human5.png"
+                      alt="あいあいのプロフィール画像"
+                    />
+                    <span>マサユキ_Webデザイン
+                      <span class="c-color-b">●</span>
+                    </span>
+                  </div>
+                  <div class="p-profile">
+                    <img
+                      src="./img/human6.png"
+                      alt="あいあいのプロフィール画像"
+                    />
+                    <span>なみ
+                      <span class="c-color-p">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  東京の表参道にある、フラワーアレンジメントが有名な花屋のWebサイトをリニューアルいたしました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__y">ライティング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider6.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">神楽坂探訪日記</h3>
+                  <p class="p-fv-slide__title-sub">まにゆ出版</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human7.png"
+                      alt="なこのプロフィール画像"
+                    />
+                    <span>なこ
+                      <span class="c-color-y">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  国内外の観光客をターゲットに、神楽坂の魅力を伝える探訪記録 Webサイト内の記事の執筆をしました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider7.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">PASNY建築設計事務所</h3>
+                  <p class="p-fv-slide__title-sub">PASNY</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human8.png"
+                      alt="真崎誠のプロフィール画像"
+                    />
+                    <span>真崎誠
+                      <span class="c-color-b">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  国内外の住宅およびインテリアのデザインを手がける設計事務所のWebサイトのデザインをしました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+                <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider8.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">たこ焼きのつくりかた</h3>
+                  <p class="p-fv-slide__title-sub">こなもん社</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human9.png"
+                      alt="あいあいのプロフィール画像"
+                    />
+                    <span>矢城りょうじ
+                      <span class="c-color-b">●</span>
+                    </span>
+                  </div>
+                  <div class="p-profile">
+                    <img
+                      src="./img/human10.png"
+                      alt="あいあいのプロフィール画像"
+                    />
+                    <span>ミキ_コーダー
+                      <span class="c-color-p">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  本場大阪で作られるたこ焼きの魅力、奥深さや人情物語を伝えるWebサイトを制作しました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+                <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider11.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">たんぽぽ保育園</h3>
+                  <p class="p-fv-slide__title-sub">株式会社丸先</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human13.png"
+                      alt="まゆかのプロフィール画像"
+                    />
+                    <span>まゆか_webdesign/制作
+                      <span class="c-color-b">●
+                        <span class="c-color-p">●</span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  少人数制で珍しい遊具で遊べることが魅力の保育園のWebサイトのデザインと制作をしました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+                <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider12.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">パティスリーカワサキ</h3>
+                  <p class="p-fv-slide__title-sub">株式会社かわさき</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human13.png"
+                      alt="まゆかのプロフィール画像"
+                    />
+                    <span>まゆか_webdesign/制作
+                      <span class="c-color-b">●
+                        <span class="c-color-p">●</span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  見た目の美味しさと物語性のあるお菓子が人気の洋菓子店のWebサイトを制作しました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__g">動画</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider9.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">by R</h3>
+                  <p class="p-fv-slide__title-sub">株式会社サキジマ</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human11.png"
+                      alt="ユウジのプロフィール画像"
+                    />
+                    <span>ユウジ
+                      <span class="c-color-g">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  特許申請した手法で作られたスニーカーを宣伝するWebサイト内で使用される動画撮影と編集をしました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="p-about__swiper-slide swiper-slide card-hidden">
+              <div class="p-tags">
+                <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+              </div>
+              <div class="p-fv-slide__img">
+                <img src="./img/slider10.jpg" alt="QUAR Leatherの製品" />
+              </div>
+              <div class="p-about-slide__title-wrapper">
+                <div class="p-fv-slide__title">
+                  <h3 class="p-fv-slide__title-main">NMDK bauty</h3>
+                  <p class="p-fv-slide__title-sub">株式会社NMDK</p>
+                </div>
+                <div class="c-heart"></div>
+              </div>
+              <div class="p-about__text-wapper">
+                <div class="p-profile__wapper">
+                  <div class="p-profile">
+                    <img
+                      src="./img/human12.png"
+                      alt="ユウジのプロフィール画像"
+                    />
+                    <span>しなみん
+                      <span class="c-color-b">●</span>
+                    </span>
+                  </div>
+                </div>
+                <p class="p-about__description">
+                  環境にも配慮し、エシカルな方法で生産された化粧品会社のWebサイトのデザインをしました。
+                </p>
+                <div class="p-links">
+                  <button class="p-link-button">もっと詳しく</button>
+                  <button class="p-link-button">
+                    ページを見る <span class="arrow-icon">↗</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+        </div>
+          <div class="p-about__swiper-pagination swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="p-about__inner l-inner">
+        <div class="p-about__container">
+          <h2 class="p-about__title">
+            <img src="./img/about-title.svg" alt="" />
+          </h2>
+          <div class="p-about__txt-wapper">
+            <div class="p-about__text animated__slideUp">
+              講座開始から2万人以上の受講生をほこるトラデジ。受講後は、業界未経験の方でもフリーランス、転職...と活躍の場を広げています。
+            </div>
+            <div class="p-about__text animated__slideUp">
+              カリキュラムは、Web制作、Webデザイン、動画制作、ECサイト制作、ドローン...などと幅広く、多岐に渡ります。
+            </div>
+            <div class="p-about__text animated__slideUp">
+                こちらのページでは、受講生および卒業生の制作物がご覧いただけます。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-works">
+      <div class="p-works__inner l-inner">
+        <h2 class="p-works__title">
+          <span class="p-works__title-en"
+            ><img src="./img/logo-works.svg" alt="タイトル：Works"
+          /></span>
+          <span class="p-works__title-ja">作品一覧</span>
+        </h2>
+        <div class="sp-filter">
+          <div class="sp-list__wrapper">
+            <ul class="sp-list js-list">
+              <li>
+                <button id="js-list-icon" class="sp-list-button">
+                  <img src="./img/batsu.png" alt="アイコン：×" width="69" height="69">
+                </button>
+              </li>
+              <li class="sp-tag c-button__tag-sp is-active" data-filter="all">
+                <span>すべて</span>
+              </li>
+              <li class="sp-tag c-button__tag-sp" data-filter="cat1"><span>コーディング</span></li>
+              <li class="sp-tag c-button__tag-sp" data-filter="cat2"><span>デザイン</span></li>
+              <li class="sp-tag c-button__tag-sp" data-filter="cat3"><span>動画</span></li>
+              <li class="sp-tag c-button__tag-sp" data-filter="cat4"><span>ライティング</span></li>
+            </ul>
+            <ul class="sp-list__detail js-list__detail">
+              <button id="js-detail-icon" class="sp-list-button">
+                <img src="./img/batsu.png" alt="アイコン：×" width="69" height="69">
+              </button>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat5"><span>＃LP</span></li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat6">
+                <span>＃Webサイト</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat7">
+                <span>＃UI/UX</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat8">
+                <span>＃WordPress</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat9">
+                <span>＃HTML/CSS</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat10">
+                <span>＃STUDIO</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat11">
+                <span>＃アプリ</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat12">
+                <span>＃LINE</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat13">
+                <span>＃ECサイト</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat14">
+                <span>＃Shopify</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat15">
+                <span>＃ドローン</span>
+              </li>
+              <li class="c-button__detail-sp detail-tag" data-filter="cat16"><span>＃SEO</span></li>
+            </ul>
+          </div>
+          <div class="sp-fileter__button">
+            <div class="c-button__works js-category">
+              <a href="">カテゴリー</a>
+            </div>
+            <div class="c-button__works js-detail">
+              <a href="">詳細絞り込み</a>
+            </div>
+          </div>
+          <!-- /.sp-fileter__button -->
+        </div>
+
+        <div class="filter-pc">
+          <div class="filter-list__wrapper">
+            <ul class="filter-list filter-list__top">
+              <li class="c-button__tag-pc is-active" data-filter="all"><span>すべて</span></li>
+              <li class="c-button__tag-pc" data-filter="cat1"><span>コーディング</span></li>
+              <li class="c-button__tag-pc" data-filter="cat2"><span>デザイン</span></li>
+              <li class="c-button__tag-pc" data-filter="cat3"><span>動画</span></li>
+              <li class="c-button__tag-pc" data-filter="cat4"><span>ライティング</span></li>
+            </ul>
+            <ul class="filter-list filter-list__middle">
+              <li class="c-button__tag-pc" data-filter="cat5"><span>＃LP</span></li>
+              <li class="c-button__tag-pc" data-filter="cat6"><span>＃Webサイト</span></li>
+              <li class="c-button__tag-pc" data-filter="cat7"><span>＃UI/UX</span></li>
+              <li class="c-button__tag-pc" data-filter="cat8"><span>＃WordPress</span></li>
+              <li class="c-button__tag-pc" data-filter="cat9"><span>＃HTML/CSS</span></li>
+              <li class="c-button__tag-pc" data-filter="cat10"><span>＃STUDIO</span></li>
+            </ul>
+            <ul class="filter-list filter-list__bottom">
+              <li class="c-button__tag-pc" data-filter="cat11"><span>＃アプリ</span></li>
+              <li class="c-button__tag-pc" data-filter="cat12"><span>＃LINE</span></li>
+              <li class="c-button__tag-pc" data-filter="cat13"><span>＃ECサイト</span></li>
+              <li class="c-button__tag-pc" data-filter="cat14"><span>＃Shopify</span></li>
+              <li class="c-button__tag-pc" data-filter="cat15"><span>＃ドローン</span></li>
+              <li class="c-button__tag-pc" data-filter="cat16"><span>＃SEO</span></li>
+            </ul>
+          </div>
+          <!-- /.filter-list__wrapper -->
+          <button id="filter-button" class="filter-button c-button__decision">絞り込む</button>
+        </div>
+        <ul class="p-filter__items">
+          <li data-item="cat1 cat9" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay0">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider2.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">サイクルのぐち</h3>
+                <p class="p-fv-slide__title-sub">サイクルのぐち</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img src="./img/human3.png" alt="るみゆのプロフィール画像" />
+                  <span>るみゆ
+                    <span class="c-color-p">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                日本で唯一の輸入自転車販売会社のWebサイトおよび通販販売サイトを制作しました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li data-item="cat1 cat2 cat6" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay3">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+              <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider1.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">QUAR Leather</h3>
+                <p class="p-fv-slide__title-sub">QUAR有限会社</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img src="./img/human1.png" alt="次郎のプロフィール画像" />
+                  <span>次郎
+                    <span class="c-color-b">●</span>
+                  </span>
+                </div>
+                <div class="p-profile">
+                  <img
+                    src="./img/human2.png"
+                    alt="サキ_Web制作のプロフィール画像"
+                  />
+                  <span>サキ_Web制作 
+                    <span class="c-color-p">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                高品質布製品専門メーカー。暖かさとスタイルを提供する会社のWebサイトを制作しました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li  data-item="cat3 cat6 cat15" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay6">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__g">動画</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider3.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">しろまきアウトドア用品店</h3>
+                <p class="p-fv-slide__title-sub">しろまき</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human4.png"
+                    alt="あいあいのプロフィール画像"
+                  />
+                  <span>あいあい
+                    <span class="c-color-g">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                冒険心をくすぐるアイテムを販売する、アウトドア用品店のWebサイト上の動画を撮影しました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li data-item="cat1 cat9" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay9">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider4.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">さんかくペンシル</h3>
+                <p class="p-fv-slide__title-sub">さんかく</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img src="./img/human3.png" alt="るみゆのプロフィール画像" />
+                  <span>るみゆ
+                      <span class="c-color-p">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                女性をターゲットとしたカラフルで楽しい多種多様な文房具のWebサイトと販売サイトを制作しました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li data-item="cat1 cat2 cat10" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay1">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+              <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider5.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">Flower MAMAMI</h3>
+                <p class="p-fv-slide__title-sub">mamami</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human5.png"
+                    alt="あいあいのプロフィール画像"
+                  />
+                  <span>マサユキ_Webデザイン
+                    <span class="c-color-b">●</span>
+                  </span>
+                </div>
+                <div class="p-profile">
+                  <img
+                    src="./img/human6.png"
+                    alt="あいあいのプロフィール画像"
+                  />
+                  <span>なみ
+                    <span class="c-color-p">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                東京の表参道にある、フラワーアレンジメントが有名な花屋のWebサイトをリニューアルいたしました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li  data-item="cat4 cat16" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay4">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__y">ライティング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider6.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">神楽坂探訪日記</h3>
+                <p class="p-fv-slide__title-sub">まにゆ出版</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human7.png"
+                    alt="なこのプロフィール画像"
+                  />
+                  <span>なこ
+                    <span class="c-color-y">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                国内外の観光客をターゲットに、神楽坂の魅力を伝える探訪記録 Webサイト内の記事の執筆をしました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li  data-item="cat2 cat12" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay7">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider7.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">PASNY建築設計事務所</h3>
+                <p class="p-fv-slide__title-sub">PASNY</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human8.png"
+                    alt="真崎誠のプロフィール画像"
+                  />
+                  <span>真崎誠
+                    <span class="c-color-b">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                国内外の住宅およびインテリアのデザインを手がける設計事務所のWebサイトのデザインをしました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li  data-item="cat1 cat2 cat14" class="p-about__swiper-slide swiper-slid animated__fadeIn --delay10">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+              <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider8.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">たこ焼きのつくりかた</h3>
+                <p class="p-fv-slide__title-sub">こなもん社</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human9.png"
+                    alt="あいあいのプロフィール画像"
+                  />
+                  <span>矢城りょうじ
+                    <span class="c-color-b">●</span>
+                  </span>
+                </div>
+                <div class="p-profile">
+                  <img
+                    src="./img/human10.png"
+                    alt="あいあいのプロフィール画像"
+                  />
+                  <span>ミキ_コーダー
+                    <span class="c-color-p">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                本場大阪で作られるたこ焼きの魅力、奥深さや人情物語を伝えるWebサイトを制作しました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li  data-item="cat1 cat2 cat5" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay2">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+              <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider11.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">たんぽぽ保育園</h3>
+                <p class="p-fv-slide__title-sub">株式会社丸先</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human13.png"
+                    alt="まゆかのプロフィール画像"
+                  />
+                  <span>まゆか_webdesign/制作
+                    <span class="c-color-b">●
+                      <span class="c-color-p">●</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                少人数制で珍しい遊具で遊べることが魅力の保育園のWebサイトのデザインと制作をしました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li   data-item="cat1 cat2 cat6" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay5">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+              <div class="p-about-slide__tag c-tag c-tag__p">コーディング</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider12.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">パティスリーカワサキ</h3>
+                <p class="p-fv-slide__title-sub">株式会社かわさき</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human13.png"
+                    alt="まゆかのプロフィール画像"
+                  />
+                  <span>まゆか_webdesign/制作
+                    <span class="c-color-b">●
+                      <span class="c-color-p">●</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                見た目の美味しさと物語性のあるお菓子が人気の洋菓子店のWebサイトを制作しました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li data-item="cat3 cat5 cat15" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay8">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__g">動画</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider9.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">by R</h3>
+                <p class="p-fv-slide__title-sub">株式会社サキジマ</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human11.png"
+                    alt="ユウジのプロフィール画像"
+                  />
+                  <span>ユウジ
+                    <span class="c-color-g">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                特許申請した手法で作られたスニーカーを宣伝するWebサイト内で使用される動画撮影と編集をしました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li  data-item="cat2 cat7" class="p-about__swiper-slide swiper-slide animated__fadeIn --delay11">
+            <div class="p-tags">
+              <div class="p-about-slide__tag c-tag c-tag__b">デザイン</div>
+            </div>
+            <div class="p-fv-slide__img">
+              <img src="./img/slider10.jpg" alt="QUAR Leatherの製品" />
+            </div>
+            <div class="p-about-slide__title-wrapper">
+              <div class="p-fv-slide__title">
+                <h3 class="p-fv-slide__title-main">NMDK bauty</h3>
+                <p class="p-fv-slide__title-sub">株式会社NMDK</p>
+              </div>
+              <div class="c-heart"></div>
+            </div>
+            <div class="p-about__text-wapper">
+              <div class="p-profile__wapper">
+                <div class="p-profile">
+                  <img
+                    src="./img/human12.png"
+                    alt="ユウジのプロフィール画像"
+                  />
+                  <span>しなみん
+                    <span class="c-color-b">●</span>
+                  </span>
+                </div>
+              </div>
+              <p class="p-about__description">
+                環境にも配慮し、エシカルな方法で生産された化粧品会社のWebサイトのデザインをしました。
+              </p>
+              <div class="p-links">
+                <button class="p-link-button">もっと詳しく</button>
+                <button class="p-link-button">
+                  ページを見る <span class="arrow-icon">↗</span>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button id="js-showAllButton" class="p-works__button c-button__more">
+          もっと見る
+        </button>
+      </div>
+    </section>
+
+    <section id="course" class="p-course">
+      <div class="p-course__inner">
+        <p class="p-course__title-sub">
+          業界最安級のWebスキル特化型<br
+            class="u-hidden-sp"
+          />オンラインスクール
+        </p>
+        <h2 class="p-course__title">
+          <img
+            src="./img/logo-course.png"
+            alt="トラデジ"
+            width="378"
+            height="78"
+          />
+          <span class="p-course__title-text">とは？</span>
+        </h2>
+        <p class="p-course__text">
+          最短距離で実務力が身につく<br
+            class="u-hidden-sp"
+          />カリキュラム・環境をご用意。<br />未経験から活躍する受講生を多数輩出！
+        </p>
+        <div class="p-course__contents">
+          <h3 class="p-course__content animated__clipView">
+            “仕事”に繋がる<br class="u-hidden-pc" />現場のスキルが<br
+              class="u-hidden-sp"
+            />身につく<br class="u-hidden-pc" />カリキュラム
+          </h3>
+          <h3 class="p-course__content animated__clipView">
+            閲覧無制限＆<br
+              class="u-hidden-pc"
+            />アップデートされる<br />カリキュラム
+          </h3>
+          <h3 class="p-course__content animated__clipView">
+            現役で活躍するプロが<br />学習のサポート
+          </h3>
+        </div>
+
+        <!----- pc ----->
+        <div class="p-course__menu">
+          <div class="p-course__menu-title">コース一覧</div>
+          <!-- /.p-course__menu-title -->
+          <div class="p-course__menu-wrapper">
+            <div class="menu-standard">
+              <div class="menu-standard__title">スタンダードコース</div>
+              <ul class="menu-standard__courses">
+                <li class="menu-standard__course">
+                  <a href="">Web制作コース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">Webデザインコース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">Webアプリ開発コース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">Shopifyコース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">動画編集コース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">Pythonコース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">ドローンコース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">ECクリエイティブコース</a>
+                </li>
+                <li class="menu-standard__course">
+                  <a href="">ライティングコース</a>
+                </li>
+                <li class="menu-standard__course"><a href="">Javaコース</a></li>
+                <li class="menu-standard__course">
+                  <a href="">LINE構築コース</a>
+                </li>
+              </ul>
+              <!-- /.menu-standard__courses -->
+            </div>
+            <!-- /.menu-standard -->
+            <div class="menu-advance">
+              <div class="menu-advance__title">アドバンスコース</div>
+              <ul class="menu-advance__courses">
+                <li class="menu-advance__course"><a>アドバンスコース</a></li>
+                <li class="menu-advance__course">
+                  <a>Webデザインアドバンスコース</a>
+                </li>
+                <li class="menu-advance__course"><a>転職支援コース</a></li>
+                <li class="menu-advance__course">
+                  <a>Webマーケティングコース</a>
+                </li>
+                <li class="menu-advance__course"><a>営業支援コース</a></li>
+              </ul>
+              <!-- /.menu-advance__courses -->
+            </div>
+            <!-- /.menu-advance -->
+          </div>
+          <!-- /.p-course__menu-wrapper -->
+        </div>
+        <!-- /.p-course__menu -->
+
+        <div class="p-course__button c-button__more-p">
+          <a href="">もっと詳しくみる</a>
+        </div>
+      </div>
+      <!-- /.p-course__inner  -->
+    </section>
+
+    <footer class="p-footer">
+      <div class="p-footer__inner l-inner">
+        <div class="p-footer__wrapper">
+          <div class="p-footer__top">
+            <div class="p-footer__logo">
+             <img src="./img/logo-w.png" alt="">
+            </div>
+            <div class="p-footer__sns">
+              <a href=""><img src="./img/icon-twitter.png" alt="twitterのアイコン"></a>
+              <a href=""><img src="./img/icon-instagram.png" alt="instagramのアイコン"></a>
+            </div>
+          </div>
+          <div class="p-footer__bottom">
+            <ul class="p-footer__content">
+              <li class="p-footer__link"><a href="#">プライバシーポリシー</a></li>
+              <li class="p-footer__link"><a href="#">特定商取引法に基づく表記</a></li>
+              <li class="p-footer__link"><a href="#">運営会社について</a></li>
+              <li class="p-footer__link"><a href="#">利用規約</a></li>
+              <li class="p-footer__link"><a href="#">お問い合わせ</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <p class="p-footer__comment">
+          ＊このサイトは株式会社デイトラ様のご協力のもと作成したコーディング用の練習課題です。実在の人物・団体とは関係ありません
+        </p>
+      </div>
+      <small class="p-footer__copyright">© Copyright 2023 トラデジ</small>
+    </footer>
+    <!-- swiperのjs読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- jsの読み込み -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
